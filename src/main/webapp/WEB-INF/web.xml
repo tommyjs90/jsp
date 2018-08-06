@@ -9,6 +9,7 @@
     <welcome-file>default.htm</welcome-file>
     <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
+  
   <servlet>
     <servlet-name>BasicServlet</servlet-name>
     <servlet-class>kr.or.ddit.servlet.BasicServlet</servlet-class>
@@ -17,10 +18,12 @@
     <servlet-name>BasicServlet</servlet-name>
     <url-pattern>/basicServlet</url-pattern>
   </servlet-mapping>
+  
   <context-param>
     <param-name>ADMIN_USER</param-name>
     <param-value>ZCHU</param-value>
   </context-param>
+  
   <error-page>
     <exception-type>java.lang.ArithmeticException</exception-type>
     <location>/error/ArithmeticException.jsp</location>
